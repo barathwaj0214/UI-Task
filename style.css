@@ -1,0 +1,813 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  max-width: 1024px;
+}
+.imglogo {
+  width: 100px;
+  height: 100px;
+  margin-left: 60px;
+}
+.logonavbar {
+  display: flex;
+  margin-top: 8px;
+}
+.logonavbar h3 {
+  padding-top: 35px;
+  padding-left: 10px;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.list {
+  display: flex;
+  gap: 20px;
+  /* gap: 30px; */
+  /* width: 400px; */
+  /* justify-content: space-around; */
+  margin-top: 35px;
+  padding: 0 20px;
+}
+.list a {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+/* .list select {
+  text-decoration: none;
+  color: black;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-style: none;
+} */
+/* .list select {
+  border: none;
+} */
+.list .listbtn {
+  width: 90px;
+  height: 40px;
+  padding: 10px;
+  background-color: white;
+  color: rgb(71, 182, 71);
+  border-color: rgb(71, 182, 71);
+  border-radius: 5px;
+}
+
+/* invest page starts here!  */
+
+.headerimg img {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: 100%;
+}
+.header h1,
+.header p,
+.header button {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  color: white;
+}
+.header h1 {
+  font-size: 80px;
+}
+.header h1,
+.header p {
+  padding: 20px;
+  font-weight: 500;
+  margin-left: 70px;
+  width: 80%;
+}
+.header {
+  width: 100%;
+  height: 60vh;
+}
+.headerbutton {
+  margin-left: 90px;
+}
+#btn1 {
+  background-color: rgb(19, 170, 207);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#btn2 {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  border-color: white;
+}
+/* <!-- Section 1 starts here --> */
+
+.firstsection {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 50vh;
+  gap: 50px;
+}
+.fsone {
+  margin-left: 50px;
+  /* border: black solid 1px; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.fsone h1 {
+  /* padding-left: 40px; */
+  font-size: 40px;
+}
+.fsone p {
+  padding-top: 30px;
+  color: rgb(187, 178, 178);
+}
+.dash {
+  height: 3px;
+  width: 60px;
+  background-color: black;
+  margin-top: 20px;
+}
+.fsone button {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.fsimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* feature starts here! */
+
+.feature {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.featureimg {
+  width: 40%;
+}
+.featureimg img {
+  width: 100%;
+  height: 100vh;
+}
+.featurecontent {
+  background-color: #0a1c44;
+  width: 73%;
+}
+.featurecontent1 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstcontent {
+  color: white;
+  /* padding-left: 20%; */
+  padding: 30px 20px 20px 30px;
+  width: 53%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; */
+}
+.dash1 {
+  background-color: white;
+  height: 3px;
+  width: 90px;
+  margin-top: 20px;
+}
+/* .df {
+  display: flex;
+} */
+.firstcontent h1 {
+  font-size: 50px;
+}
+.firstcontent p {
+  /* font-size: 20px; */
+  padding: 10px 0px 10px 0px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  width: 650px;
+  /* margin-left: 250px; */
+  /* margin-top: 30px; */
+}
+.cardimage img {
+  height: 200px;
+}
+.cardcontent {
+  padding: 25px 30px;
+  background-color: white;
+  width: 450px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* justify-content: space-evenly; */
+}
+.cardcontent h1 {
+  color: rgb(28, 147, 202);
+}
+/* .cardcontent p {
+  padding-top: 25px;
+} */
+#carddate {
+  color: gray;
+}
+.cardbutton button {
+  /* margin-left: 100px; */
+  padding: 15px 20px;
+  /* margin-top: 20px 0px 0px 200px; */
+  margin-left: 18rem;
+  margin-top: 20px;
+  background-color: #0087ab;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 150px;
+}
+.subcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.subicon {
+  display: flex;
+  gap: 20px;
+  color: gray;
+}
+/* <!-- course page starts here --> */
+
+/* .coursepage {
+  width: 100%;
+  height: 100vh;
+} */
+
+/* .bgeffect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.418);
+} */
+.courseheading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  padding: 30px 0px 30px 0px;
+}
+.courseheading h1 {
+  padding-left: 50px;
+}
+.dash2 {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+.imgmainbox {
+  /* border: 2px solid black; */
+  margin: 40px 230px;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  gap: 50px;
+  /* flex-wrap: wrap; */
+}
+.courseimg1 {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.courseimg1 img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.9;
+}
+.courseimg1text {
+  position: absolute;
+  color: white;
+  top: 250px;
+  left: 250px;
+  text-align: center;
+}
+.courseimg1text p {
+  color: whitesmoke;
+}
+.courseimgbox2 {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  gap: 50px;
+  /* flex-wrap: wrap; */
+}
+.courseimgbox2 img {
+  width: 400px;
+  height: 235px;
+  opacity: 0.9;
+  object-fit: cover;
+}
+.courseimgbox2-1 {
+  position: relative;
+}
+.courseimg2text {
+  position: absolute;
+  top: 100px;
+  left: 130px;
+  color: white;
+  text-align: center;
+}
+.courseimgbox3 {
+  /* width: 50%; */
+  height: 250px;
+  display: flex;
+  gap: 50px;
+}
+.courseimgbox3 img {
+  width: 400px;
+  height: 235px;
+  opacity: 0.9;
+}
+.combo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* lesson page starts here! */
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  /* height: 420px; */
+  /* border: 1px solid black; */
+  margin: 40px 40px;
+}
+.card1Img {
+  width: 100%;
+}
+.cardboxcontent {
+  display: flex;
+}
+.cardboxcontent1 {
+  width: 120px;
+  height: 145px;
+  text-align: center;
+  padding-top: 30px;
+  /* margin-bottom: 50px; */
+  background-color: #0a1c44;
+  color: white;
+}
+.cardboxcontent2 {
+  padding: 20px 0 0 20px;
+}
+.cardboxcontent2 h1 {
+  color: #0087ab;
+}
+.cardiconbox {
+  display: flex;
+  padding-top: 15px;
+  gap: 10px;
+  font-size: 20px;
+  color: gray;
+}
+.maincard {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* skills page starts here */
+.bars {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bar1 {
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#0087ab 50%, rgb(189, 189, 189) 0);
+}
+.bar2 {
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#0087ab 60%, rgb(189, 189, 189) 0);
+}
+.bar3 {
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#0087ab 70%, rgb(189, 189, 189) 0);
+}
+.bar4 {
+  /* border: 10px solid #0087ab;
+  border-left-color: rgb(189, 189, 189);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px 10px 10px 20px; */
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#0087ab 80%, rgb(189, 189, 189) 0);
+}
+.mainbar1 h3 {
+  padding-top: 30px;
+  color: rgb(49, 48, 48);
+}
+
+.bar1 p,
+.bar2 p,
+.bar3 p,
+.bar4 p {
+  text-align: center;
+  padding: 65px;
+}
+.mainbar1 {
+  width: 200px;
+}
+.mainbar1 {
+  text-align: center;
+}
+
+/* our featured course starts here! */
+
+.mainofcimg {
+  width: 100%;
+  height: 50vh;
+  margin-top: 100px;
+  /* position: relative; */
+}
+.mainimgofc {
+  position: relative;
+}
+.ofccontent {
+  position: absolute;
+  width: 50%;
+  /* top: 30px; */
+  bottom: 30%;
+  left: 15%;
+  color: rgb(255, 255, 255);
+}
+.ofccontent h1 {
+  padding-top: 30px;
+  font-size: 50px;
+}
+.ofccontent p {
+  padding-top: 30px;
+  color: rgb(211, 210, 210);
+}
+.ofccontent button {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: white;
+}
+/* Our teams starts here */
+.ourteampagemain {
+  width: 500px;
+  height: 200px;
+}
+.mainotp {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.mainotp1 {
+  /* width: 500px;
+  height: 150px; */
+  display: flex;
+}
+.imgotp img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+.otp1content {
+  padding: 0px 0 0 20px;
+}
+.otp1content h1 {
+  color: #0087ab;
+}
+.otp1content p {
+  padding-top: 20px;
+  color: rgb(158, 158, 158);
+}
+.mainotp2 {
+  padding-top: 10px;
+  color: rgb(150, 149, 149);
+}
+
+/* conclusion starts here! */
+.mainconclusion {
+  margin-top: 80px;
+}
+.mainmc {
+  position: relative;
+}
+
+.mainmc img {
+  width: 100%;
+  height: 60vh;
+  opacity: 0.8;
+}
+.content p {
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  width: 500px;
+  height: 300px;
+  color: white;
+  font-size: 20px;
+}
+.content h1 {
+  position: absolute;
+  top: 250px;
+  left: 950px;
+  color: white;
+}
+.content span {
+  position: absolute;
+  top: 275px;
+  left: 1010px;
+  color: white;
+}
+.content img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 1100px;
+  border-radius: 20px;
+}
+
+/* map page starts here  */
+
+.mapsection {
+  width: 100%;
+  height: 50vh;
+}
+.mapmain {
+  display: flex;
+}
+.mapmain1 {
+  display: flex;
+  flex-direction: column;
+}
+.imgmap {
+  width: 50%;
+}
+.imgmap img {
+  width: 100%;
+  height: 80vh;
+}
+.contactsmap {
+  width: 400px;
+  height: 300px;
+  /* border: 1px solid; */
+  color: rgb(185, 185, 185);
+  margin: 30px 150px;
+}
+.contactsmap h1 {
+  color: black;
+}
+.contactsmap p {
+  padding: 0 0 20px 0px;
+}
+.maindashcontact {
+  display: flex;
+}
+.imgcontactsdash1 {
+  width: 100px;
+  height: 2px;
+  background-color: #0087ab;
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+.imgcontactsdash {
+  width: 400px;
+  height: 2px;
+  background-color: rgb(221, 221, 221);
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+.iconmap {
+  /* padding: 40px; */
+  font-size: 20px;
+  /* cursor: pointer; */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.iconmap i {
+  color: rgb(101, 100, 100);
+  padding: 15%;
+  padding-bottom: 15px;
+  background-color: rgb(235, 235, 235);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+.newslettermap {
+  width: 400px;
+  height: 300px;
+  /* border: 1px solid; */
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 140px;
+}
+.newslettermap p {
+  color: rgb(191, 189, 189);
+  padding-bottom: 20px;
+}
+.newslettermap input {
+  padding: 12px;
+  /* border-radius: 5px; */
+  border-color: rgb(187, 184, 184);
+}
+
+.newsbutton {
+  background-color: #0087ab;
+  color: white;
+  padding: 15px;
+  border: none;
+  /* border-radius: 5px; */
+}
+.input-button {
+  display: flex;
+}
+.input-button ::placeholder {
+  font-weight: bold;
+}
+.email-button {
+  border-right: none;
+  border: 1px solid gray;
+}
+.menu-btn img {
+  width: 16px;
+  height: 16px;
+  background-color: none;
+  border: none;
+  /* padding: 10px; */
+  /* border: none; */
+}
+.menu-bar {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* FOR TABLETS  */
+
+@media (max-width: 1023px) {
+  /* navbar starts here ! */
+
+  .navbar .listbtn {
+    /* display: none; */
+    padding: 10px;
+    width: 150px;
+  }
+  .navbar .list {
+    font-size: 20px;
+    gap: 5px;
+  }
+  .navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .imglogo {
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .logonavbar {
+    /* padding-left: 25%; */
+    padding-left: 0px 20px 0px 0px;
+  }
+
+  /* Invest page starts here! */
+
+  .header h1,
+  .header p {
+    padding: 50px 0px 0px 0px;
+    font-weight: 500;
+    margin: 0px 0px 0px 80px;
+    width: 50%;
+  }
+  .headerbutton {
+    margin-left: 80px;
+    padding-top: 20px;
+  }
+  .header h1,
+  .header p,
+  .header button {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    color: white;
+  }
+}
+
+/* FOR MOBILES */
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 0px 40px 40px;
+    margin: 10px 10px 10px 40px;
+  }
+  .logonavbar {
+    padding-left: 15%;
+  }
+
+  .list a {
+    font-size: 12px;
+  }
+  .list {
+    display: flex;
+    gap: 0px;
+  }
+
+  /* Invest page starts here! */
+
+  .header h1,
+  .header p {
+    padding: 20px 0px 0px 50px;
+    width: 80%;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 10px;
+  }
+  .headerbutton {
+    margin-left: 80px;
+    padding: 30px 0px 0px 50px;
+  }
+  .header h1,
+  .header p,
+  .header button {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    color: white;
+  }
+  .headerimg img {
+    height: 40vh;
+    /* width: 100%; */
+    background-size: cover;
+    position: absolute;
+    opacity: 100%;
+  }
+}
