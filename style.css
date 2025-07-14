@@ -3,59 +3,54 @@
   margin: 0px;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
 
 .main {
-  width: 100%;
-  max-width: 1024px;
+  width: 100vw;
 }
-.imglogo {
-  width: 100px;
-  height: 100px;
-  margin-left: 60px;
-}
-.logonavbar {
-  display: flex;
-  margin-top: 8px;
-}
-.logonavbar h3 {
-  padding-top: 35px;
-  padding-left: 10px;
-}
+
 .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  align-items: center;
+  padding: 0 30px;
+  flex-wrap: wrap;
 }
+.logonavbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+.imglogo {
+  width: 100px;
+  height: 100px;
+}
+
 .list {
   display: flex;
-  gap: 20px;
-  /* gap: 30px; */
-  /* width: 400px; */
-  /* justify-content: space-around; */
-  margin-top: 35px;
-  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-wrap: nowrap;
 }
-.list a {
-  text-decoration: none;
-  color: black;
-  margin-top: 10px;
-  padding-left: 10px;
-  padding-right: 15px;
+.list ul {
+  display: flex;
+  gap: 30px;
 }
-/* .list select {
-  text-decoration: none;
-  color: black;
-  margin-top: 0px;
-  padding-left: 10px;
-  padding-right: 15px;
-  border-style: none;
-} */
-/* .list select {
-  border: none;
-} */
-.list .listbtn {
+
+.listbtn {
   width: 90px;
   height: 40px;
   padding: 10px;
@@ -70,9 +65,8 @@
 .headerimg img {
   height: 60vh;
   width: 100%;
-  background-size: cover;
+  object-fit: cover;
   position: absolute;
-  opacity: 100%;
 }
 .header h1,
 .header p,
@@ -87,17 +81,17 @@
 }
 .header h1,
 .header p {
-  padding: 20px;
   font-weight: 500;
-  margin-left: 70px;
   width: 80%;
 }
 .header {
   width: 100%;
   height: 60vh;
 }
-.headerbutton {
-  margin-left: 90px;
+.investpagewrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #btn1 {
   background-color: rgb(19, 170, 207);
@@ -117,20 +111,18 @@
 
 .firstsection {
   display: flex;
-  /* justify-content: space-between; */
-  height: 50vh;
-  gap: 50px;
+  /* flex-wrap: wrap-reverse; */
+  min-height: 50vh;
+  gap: 30px;
 }
 .fsone {
-  margin-left: 50px;
-  /* border: black solid 1px; */
-  width: 70%;
+  width: 60%;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .fsone h1 {
-  /* padding-left: 40px; */
   font-size: 40px;
 }
 .fsone p {
@@ -150,7 +142,7 @@
   margin-top: 20px;
   margin-left: 10px;
 }
-.fsimage {
+.fsimage img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,20 +151,17 @@
 /* feature starts here! */
 
 .feature {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
 }
 .featureimg {
-  width: 40%;
-}
-.featureimg img {
-  width: 100%;
-  height: 100vh;
+  flex: 1;
+  object-fit: cover;
 }
 .featurecontent {
   background-color: #0a1c44;
-  width: 73%;
+  flex: 2;
 }
 .featurecontent1 {
   display: flex;
@@ -214,7 +203,7 @@
 }
 .card {
   display: flex;
-  width: 650px;
+  /* width: 650px; */
   /* margin-left: 250px; */
   /* margin-top: 30px; */
 }
@@ -310,7 +299,7 @@
   position: relative;
 }
 .courseimg1 img {
-  width: 100%;
+  /* width: 100%; */
   height: 500px;
   opacity: 0.9;
 }
@@ -703,111 +692,73 @@
   display: none;
 }
 
+@media screen and (width< 1024px) {
+  .featureimg {
+    display: none;
+  }
+  .imgmainbox {
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 10px;
+  }
+  .combo {
+    flex-wrap: wrap;
+  }
+  .courseheading {
+    font-size: 30px;
+  }
+}
+
 /* FOR TABLETS  */
-
-@media (max-width: 1023px) {
-  /* navbar starts here ! */
-
-  .navbar .listbtn {
-    /* display: none; */
-    padding: 10px;
-    width: 150px;
+@media screen and (width< 850px) {
+  .firstsection {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
-  .navbar .list {
-    font-size: 20px;
-    gap: 5px;
+  .feature {
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
-  .navbar {
-    padding-left: 30px;
-    padding-right: 30px;
+  .cardcontent {
+    width: 300px;
   }
-  .imglogo {
-    width: 100px;
-    height: 100px;
-    margin-left: 0px;
+  .cardbutton button {
+    margin: 20px 0px 50px 200px;
   }
-  .logonavbar {
-    /* padding-left: 25%; */
-    padding-left: 0px 20px 0px 0px;
-  }
-
-  /* Invest page starts here! */
-
-  .header h1,
-  .header p {
-    padding: 50px 0px 0px 0px;
-    font-weight: 500;
-    margin: 0px 0px 0px 80px;
-    width: 50%;
-  }
-  .headerbutton {
-    margin-left: 80px;
-    padding-top: 20px;
-  }
-  .header h1,
-  .header p,
-  .header button {
-    position: relative;
-    top: 10px;
-    left: 0px;
-    color: white;
+  .courseheading {
+    font-size: 30px;
   }
 }
 
 /* FOR MOBILES */
-
-@media (max-width: 768px) {
+@media screen and (width<648px) {
   .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0px 0px 40px 40px;
-    margin: 10px 10px 10px 40px;
+    justify-content: center;
   }
-  .logonavbar {
-    padding-left: 15%;
-  }
-
-  .list a {
-    font-size: 12px;
-  }
-  .list {
-    display: flex;
-    gap: 0px;
-  }
-
-  /* Invest page starts here! */
-
-  .header h1,
-  .header p {
-    padding: 20px 0px 0px 50px;
-    width: 80%;
-  }
-  .header h1 {
-    font-size: 40px;
-  }
-  .header p {
-    font-size: 10px;
-  }
-  .headerbutton {
-    margin-left: 80px;
-    padding: 30px 0px 0px 50px;
+  .listbtn {
+    margin-bottom: 20px;
   }
   .header h1,
   .header p,
   .header button {
-    position: relative;
-    top: 60px;
-    left: 0px;
-    color: white;
+    top: 100px;
+    left: 40px;
   }
-  .headerimg img {
-    height: 40vh;
-    /* width: 100%; */
-    background-size: cover;
-    position: absolute;
-    opacity: 100%;
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .featurecontent {
+    width: 100%;
+  }
+  .cardcontent {
+    width: 150px;
+    height: 250px;
+    padding: 10px 10px 0px 10px;
+  }
+  .cardimage img {
+    height: 250px;
   }
 }
