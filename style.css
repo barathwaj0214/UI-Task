@@ -215,8 +215,7 @@ li {
 }
 .cardbutton button {
   padding: 15px 20px;
-  margin-left: 18rem;
-  margin-top: 20px;
+  margin: 20px 0px 20px 100px;
   background-color: #0087ab;
   border-radius: 5px;
   border: none;
@@ -241,9 +240,6 @@ li {
   font-size: 40px;
   padding: 30px 0px 30px 0px;
 }
-.courseheading h1 {
-  padding-left: 50px;
-}
 .dash2 {
   width: 100px;
   height: 4px;
@@ -262,7 +258,6 @@ li {
 }
 .courseimg1 img {
   min-height: 415px;
-
   opacity: 0.9;
 }
 .courseimg1text {
@@ -276,7 +271,7 @@ li {
   color: whitesmoke;
 }
 .courseimgbox2 {
-  width: 45%;
+  width: 50%;
   height: 250px;
   display: flex;
   gap: 25px;
@@ -302,7 +297,7 @@ li {
   text-align: center;
 }
 .courseimgbox3 {
-  width: 45%;
+  width: 50%;
   height: 250px;
   display: flex;
   gap: 25px;
@@ -362,7 +357,6 @@ li {
 .maincard {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 /* skills page starts here */
@@ -540,6 +534,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  min-height: 100vh;
 }
 .mapmain1 {
   display: flex;
@@ -561,7 +556,6 @@ li {
   width: 400px;
   height: 300px;
   color: rgb(185, 185, 185);
-  /* margin: 30px 150px; */
 }
 .contactsmap h1 {
   color: black;
@@ -588,14 +582,10 @@ li {
 }
 .iconmap {
   font-size: 20px;
-
   width: 30px;
   height: 30px;
   display: flex;
-
   gap: 5px;
-  margin-left: 10px;
-  margin-top: 20px;
 }
 .iconmap i {
   color: rgb(101, 100, 100);
@@ -612,7 +602,6 @@ li {
   height: 300px;
 
   padding: 0px 0px 0px 10px;
-  /* margin: 0px 0px 0px 140px; */
 }
 .newslettermap p {
   color: rgb(191, 189, 189);
@@ -658,12 +647,17 @@ li {
 .footer {
   background-color: #0087ab;
 }
-/* .footerbox{
+.footerbox {
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   background-color: #0087ab;
-  color: black;
-} */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
 
 /* Media query starts with each section  */
 
@@ -676,11 +670,9 @@ li {
     margin-bottom: 10px;
   }
   .list {
-    flex-direction: column;
     align-items: flex-start;
   }
   .list ul {
-    flex-direction: column;
     gap: 15px;
     width: 100%;
     padding: 0;
@@ -716,7 +708,7 @@ li {
 }
 @media (max-width: 768px) {
   .headerimg img {
-    height: 50vh;
+    min-height: 50vh;
   }
   .header h1,
   .header p,
@@ -881,8 +873,7 @@ li {
   .courseimg1text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
   }
   .maincombo {
     flex-direction: column;
@@ -897,8 +888,7 @@ li {
   }
   .courseimg2text {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
   }
 }
 @media (max-width: 480px) {
@@ -953,7 +943,7 @@ li {
     align-items: center;
   }
   .card1 img {
-    width: 50%;
+    width: 350px;
   }
   .cardboxcontent {
     flex-direction: row;
@@ -965,7 +955,7 @@ li {
   }
   .cardboxcontent2 {
     padding: 20px 0 0 55px;
-    width: 246px;
+    width: 250px;
   }
   .cardboxcontent2 h1 {
     font-size: 20px;
@@ -1077,24 +1067,21 @@ li {
 @media (max-width: 480px) {
   .content p {
     top: 80px;
-    left: 70px;
+    left: 10px;
     width: 290px;
     height: 100px;
     font-size: 15px;
   }
   .content h1 {
     top: 180px;
-    left: 130px;
+    left: 100px;
   }
   .content span {
-    top: 200px;
-    left: 160px;
+    top: 210px;
+    left: 140px;
   }
   .content img {
-    width: 150px;
-    height: 150px;
-    top: 230px;
-    left: 110px;
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -1102,21 +1089,67 @@ li {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .mapmain {
     flex-direction: column;
   }
-  .imgmap img {
-    width: 400px;
+  .imgmap {
+    width: 100%;
   }
   .contactsmap {
     width: 300px;
     height: 300px;
     margin: 10px;
+    padding: 10px;
   }
   .newslettermap {
     width: 300px;
     height: 300px;
     margin: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .mapsection {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .mapmain {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .imgmap {
+    width: 100%;
+  }
+  .contactsmap {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 200px;
+  }
+  .imgcontactsdash1 {
+    width: 50px;
+    height: 2px;
+    background-color: #0087ab;
+    margin: 30px 0px 30px 0px;
+    border-radius: 5px;
+  }
+  .imgcontactsdash {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(221, 221, 221);
+    margin: 30px 0px;
+    border-radius: 5px;
+  }
+  .newslettermap {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
   }
 }
