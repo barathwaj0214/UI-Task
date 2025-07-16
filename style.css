@@ -370,7 +370,7 @@ li {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
     conic-gradient(#0087ab 50%, rgb(189, 189, 189) 0);
 }
 .bar2 {
@@ -378,7 +378,7 @@ li {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
     conic-gradient(#0087ab 60%, rgb(189, 189, 189) 0);
 }
 .bar3 {
@@ -386,7 +386,7 @@ li {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
     conic-gradient(#0087ab 70%, rgb(189, 189, 189) 0);
 }
 .bar4 {
@@ -394,7 +394,7 @@ li {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+  background: radial-gradient(closest-side, white 80%, transparent 80% 100%),
     conic-gradient(#0087ab 80%, rgb(189, 189, 189) 0);
 }
 .mainbar1 h3 {
